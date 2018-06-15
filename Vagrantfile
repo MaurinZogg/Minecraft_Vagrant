@@ -15,6 +15,7 @@ config.vm.provision "shell", inline: <<-SHELL
 	mkdir /home/vagrant/minecraft/
 	cd /home/vagrant/minecraft/
 	cp /var/sync/server.properties /home/vagrant/minecraft/
+	cp /var/sync/ops.json /home/vagrant/minecraft/
 	sudo apt-get install wget -y
 	wget -O minecraft_server.jar https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/minecraft_server.1.12.2.jar
 	echo "eula=true" > eula.txt
