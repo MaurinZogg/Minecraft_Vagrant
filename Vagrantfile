@@ -13,11 +13,11 @@ config.vm.provision "shell", inline: <<-SHELL
 	sudo apt-get install screen -y
 	mkdir /home/vagrant/minecraft/
 	cd /home/vagrant/minecraft/
+	cp /var/sync/server.properties /home/vagrant/minecraft/
 	sudo apt-get install wget -y
 	wget -O minecraft_server.jar https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/minecraft_server.1.12.2.jar
 	echo "eula=true" > eula.txt
 	screen -S "Minecraft server 1"
 	java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui
-	cp /var/sync/server.properties /home/vagrant/minecraft/
 SHELL
 end
