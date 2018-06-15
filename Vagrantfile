@@ -19,5 +19,7 @@ config.vm.provision "shell", inline: <<-SHELL
 	echo "eula=true" > eula.txt
 	screen -S "Minecraft server 1"
 	java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui
+	exit
+	exit
 SHELL
 end
