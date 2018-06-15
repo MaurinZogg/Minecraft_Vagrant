@@ -8,7 +8,7 @@ Vagrant::Config.run do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   # This server was build using Ubuntu 12.04 LTS, "precise pangolin".
   # Before using this box, you must add it; see the README.md.
-  config.vm.box = "puppetlabs-precise"
+  config.vm.box = "minecraft_server"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
@@ -18,7 +18,7 @@ Vagrant::Config.run do |config|
   # Server from the host machine as well as any other machines on the same
   # network by specifying the IP address below as the server IP address in
   # the Minecraft client.
-  config.vm.network :hostonly, "10.20.30.40"
+  # config.vm.network :hostonly, "10.20.30.40"
 
   # Assign this VM to a bridged network, allowing you to connect directly to a
   # network using the host's network device. This makes the VM appear as another

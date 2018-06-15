@@ -10,3 +10,5 @@ project_page 'https://github.com/branan/puppet-module-minecraft'
 dependency 'branan/s3file', '>= 1.0.0'
 dependency 'puppetlabs/stdlib', '>= 2.2.0'
 dependency 'puppetlabs/java', '>= 0.1.6'
+
+minecraft::op 'Mazogg'
