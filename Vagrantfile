@@ -3,7 +3,6 @@ Vagrant.configure(2) do |config|
   config.vm.network "forwarded_port", guest:25565, host:25565, auto_correct: true
   config.vm.synced_folder "/home/vazogg/Vagrant/Minecraft_Vagrant", "/var/sync/"
   config.vm.hostname = "minecraft"
-  config.vm.define = "minecraft"
   # config.ssh.pty = true
 config.vm.provider "virtualbox" do |vb|
   vb.memory = "2048"  
