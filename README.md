@@ -13,3 +13,5 @@ To Add a OP Account add the following:
     },
 
 You can get your uuid at: https://mcuuid.net/
+
+To reach the server from outside your LAN you have to Forward Port 25565 to your host server
